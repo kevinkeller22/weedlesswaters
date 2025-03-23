@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+    
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,29 +17,35 @@
         .cta button { background: #2a9d8f; color: white; border: none; padding: 15px 30px; cursor: pointer; font-size: 18px; border-radius: 5px; }
         .cta button:hover { background: #21867a; }
         footer { text-align: center; padding: 20px; background: #264653; color: white; }
+        #quote {
+            display: none;
+                }
     </style>
 </head>
+    
 <body>
     <header>
         <img src="logo.webp" alt="Weedless Waters Logo" width="200" style="margin-bottom: 10px;">
         <h1>Weedless Waters</h1>
         <p>Aquatic Weeding & Waterfront Services</p>
     </header>
+    
     <nav>
         <a href="#services">Services</a>
         <a href="#pricing">Pricing</a>
         <a href="#about">About Us</a>
         <a href="#contact">Contact</a>
     </nav>
-<section class="hero">
-    <h2>Professional Weed Removal & Waterfront Cleaning</h2>
-    <p>Get your lakefront looking pristine with our expert services.</p>
-    <div class="cta">
-    <a href="#quote"><button>Get a Free Quote</button></a>
-    </div>
-</section>
+    
+    <section class="hero">
+        <h2>Professional Weed Removal & Waterfront Cleaning</h2>
+        <p>Get your lakefront looking pristine with our expert services.</p>
+        <div class="cta">
+        <button onclick="toggleQuote()">Get a Free Quote</button>
+        </div>
+    </section>
 
-<section id="quote" class="container">
+    <section id="quote" class="container">
         <h2>Get a Free Quote</h2>
         <form action="https://formspree.io/f/xnnpddeg" method="POST">
             <label for="name">Name:</label><br>
@@ -51,7 +58,7 @@
             <textarea name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea><br><br>
 
             <button type="submit" style="background-color: #2a9d8f; color: white; border: none; padding: 12px 25px; font-size: 16px; border-radius: 5px;">Send Request</button>
-    </form>
+        </form>
     </section>
 
     <div class="container">
@@ -79,8 +86,18 @@
         <p>Email: <a href="mailto:Kevin.Keller22@outlook.com">Kevin.Keller22@outlook.com</a> | Phone: <a href="tel:+16308425240">(630) 842-5240</a></p>
     </section>
     </div>
+    
     <footer>
         <p>&copy; 2025 Weedless Waters. All rights reserved.</p>
     </footer>
+
+    <script>
+        function toggleQuote() {
+        const quoteSection = document.getElementById('quote');
+        quoteSection.style.display = quoteSection.style.display === 'none' ? 'block' : 'none';
+        quoteSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+    
 </body>
 </html>
