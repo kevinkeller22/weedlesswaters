@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weedless Waters | Aquatic Weeding Services</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #f0f8ff; color: #333; }
+        header { background: #2a9d8f; color: white; padding: 20px; text-align: center; font-size: 24px; }
+        nav { display: flex; justify-content: center; background: #264653; padding: 10px; }
+        nav a { color: white; text-decoration: none; padding: 10px 20px; }
+        .hero { text-align: center; padding: 50px; background: #e9c46a; }
+        .container { padding: 20px; max-width: 1000px; margin: auto; }
+        .service { background: #f4a261; padding: 20px; margin-bottom: 20px; border-radius: 10px; }
+        .cta { text-align: center; padding: 20px; }
+        .cta button { background: #2a9d8f; color: white; border: none; padding: 15px 30px; cursor: pointer; font-size: 18px; border-radius: 5px; }
+        .cta button:hover { background: #21867a; }
+        footer { text-align: center; padding: 20px; background: #264653; color: white; }
+        #quote { display: none; }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.webp" alt="Weedless Waters Logo" width="200" style="margin-bottom: 10px;">
+        <h1>Weedless Waters</h1>
+        <p>Aquatic Weeding & Waterfront Services</p>
+    </header>
+    <nav>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <section class="hero">
+        <h2>Professional Weed Removal & Waterfront Cleaning</h2>
+        <p>Get your lakefront looking pristine with our expert services.</p>
+        <div class="cta">
+            <button onclick="toggleQuote()">Get a Free Quote</button>
+        </div>
+    </section>
+    <section id="quote" class="container">
+        <h2>Get a Free Quote</h2>
+        <form action="https://formspree.io/f/xnnpddeg" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" name="name" required style="width: 100%; padding: 8px;"><br><br>
+            <label for="email">Email:</label><br>
+            <input type="email" name="_replyto" required style="width: 100%; padding: 8px;"><br><br>
+            <label for="message">Tell us about your waterfront:</label><br>
+            <textarea name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea><br><br>
+            <button type="submit" style="background-color: #2a9d8f; color: white; border: none; padding: 12px 25px; font-size: 16px; border-radius: 5px;">Send Request</button>
+        </form>
+    </section>
+    <div class="container">
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="service">
+                <h3>Aquatic Weed Cutting & Removal</h3>
+                <p>Eco-friendly weed cutting using manual tools and equipment to restore your lakefront.</p>
+            </div>
+            <div class="service">
+                <h3>Beach Cleaning</h3>
+                <p>Debris removal, sand leveling, and shoreline grooming for a clean, usable beach.</p>
+            </div>
+            <div class="service">
+                <h3>Beach Sand Replenishment (Add-On)</h3>
+                <p>Optional sand delivery and spreading to restore soft, walkable beach areas. Contact us for a custom quote.</p>
+            </div>
+        </section>
+        <section id="about">
+            <h2>About Us</h2>
+            <p>I’ve grown up on a lake and every year since I was young I’ve been out cleaning up the beach and pulling weeds. Over time, I realized there was a real need for this kind of service, so I started helping out neighbors and local lakefront property owners. 2025 marks the first season that Weedless Waters is in full business, and we’re excited to bring our services and experience to the community.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <p>Email: <a href="mailto:Kevin.Keller22@outlook.com">Kevin.Keller22@outlook.com</a> | Phone: <a href="tel:+16308425240">(630) 842-5240</a></p>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Weedless Waters. All rights reserved.</p>
+    </footer>
+    <script>
+        function toggleQuote() {
+            const quoteSection = document.getElementById('quote');
+            quoteSection.style.display = quoteSection.style.display === 'none' ? 'block' : 'none';
+            quoteSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
