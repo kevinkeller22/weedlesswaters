@@ -197,18 +197,41 @@
             <button onclick="toggleQuote()">Get a Free Quote</button>
         </div>
     </section>
-    <section id="quote" class="container">
-        <h2>Get a Free Quote</h2>
-        <form action="https://formspree.io/f/xnnpddeg" method="POST">
-            <label for="name">Name:</label><br>
-            <input type="text" name="name" required style="width: 100%; padding: 8px;"><br><br>
-            <label for="email">Email:</label><br>
-            <input type="email" name="_replyto" required style="width: 100%; padding: 8px;"><br><br>
-            <label for="message">Tell us about your waterfront:</label><br>
-            <textarea name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea><br><br>
-            <button type="submit" style="background-color: #2a9d8f; color: white; border: none; padding: 12px 25px; font-size: 16px; border-radius: 5px;">Send Request</button>
-        </form>
-    </section>
+   <section id="quote" class="container">
+    <h2>Get a Free Quote</h2>
+    <form action="https://formspree.io/f/xnnpddeg" method="POST">
+        <!-- Name -->
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" required style="width: 100%; padding: 8px;"><br><br>
+
+        <!-- Email -->
+        <label for="email">Email:</label><br>
+        <input type="email" name="_replyto" required style="width: 100%; padding: 8px;"><br><br>
+
+        <!-- Street Address -->
+        <label for="street">Street Address:</label><br>
+        <input type="text" name="street" placeholder="123 Lakeview Dr" required style="width: 100%; padding: 8px;"><br><br>
+
+        <!-- City -->
+        <label for="city">City:</label><br>
+        <input type="text" name="city" placeholder="Round Lake Beach" required style="width: 100%; padding: 8px;"><br><br>
+
+        <!-- State -->
+        <label for="state">State:</label><br>
+        <input type="text" name="state" placeholder="IL" required style="width: 100%; padding: 8px;"><br><br>
+
+        <!-- ZIP Code -->
+        <label for="zip">ZIP Code:</label><br>
+        <input type="text" name="zip" placeholder="60073" required style="width: 100%; padding: 8px;"><br><br>
+
+        <!-- Message -->
+        <label for="message">Tell us about your waterfront:</label><br>
+        <textarea name="message" rows="5" required style="width: 100%; padding: 8px;"></textarea><br><br>
+
+        <!-- Submit Button -->
+        <button type="submit" style="background-color: #2a9d8f; color: white; border: none; padding: 12px 25px; font-size: 16px; border-radius: 5px;">Send Request</button>
+    </form>
+</section>
     <div class="container">
         <section id="services">
             <h2>Our Services</h2>
